@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+    --container: hsl(215, 19%, 13%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: var(--VeryDarkBlue);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    color: var(--White);
+}
+
+.content {
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    background:var(--container);
+    border-radius: 1rem;
+    width: 25rem;
+    padding: 1.8rem;
+    gap: 1.5rem;
+}
+
+p{
+    margin: 0;
+    color: var(--LightGrey);
+}
+
+.contenedor-circulo {
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.circulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--DarkBlue);
+    color: var(--MediumGrey);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.circulos:hover {
+    background: var(--LightGrey);
+	color: var(--White);
+	cursor: pointer;
+}
+
+.btn {
+    background:var(--Orange);
+    border-radius: 1.5rem;
+    border: 0;
+    height: 3rem;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    color: var(--White)
+}
+
+.btn:hover {
+    background:var(--White);
+    color: var(--Orange);
+}
+
+    /*thanks content*/
+
+#thanks {
+	display: none;
+}
+
+.container-thanks {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 25rem;
+	background: var(--container);
+	border-radius: 1.5rem;
+	padding: 2.2rem;
+	gap: 1.5rem;
+}
+
+#your-rating {
+	height: 2rem;
+	border-radius: 1rem;
+	background: var(--DarkBlue);
+	color: var(--Orange);
+	padding: 0.5rem;
+}
+
+.attribution { 
+    font-size: 13px; 
+    text-align: center;
+    color:var(--LightGrey)
+    }
+    
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
